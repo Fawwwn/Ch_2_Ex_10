@@ -1,19 +1,26 @@
 #include <iostream>
+// Hint: Use the following formula to calculate miles per gallon (MPG) MPG = Miles Driven / Gallons of Gas Used
+
+
 
 int main()
 {
 	using std::cout;
+	using std::cin;
 
+	double gallonsheld;
 
-	const int GAL = 15;
+	double milesdriven;
 
-	const int MILE = 375;
+	cout << "How many gallons does your car hold? ";
+	cin >> gallonsheld;
 
-	const int MPG = MILE / GAL;
+	cout << "How many miles have you driven so far? ";
+	cin >> milesdriven;
 
-	cout << "This is the MPG you'll receive: " << MPG;
-	
+	double  MPG = milesdriven / gallonsheld;
 
+	cout << "This is your MPG: " << MPG;
 
 	return 0;
 }
